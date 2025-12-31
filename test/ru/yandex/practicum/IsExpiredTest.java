@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import ru.yandex.practicum.delivery.PerishableParcel;
 
 public class IsExpiredTest {
-    private static PerishableParcel perishableParcel;
+    private  PerishableParcel perishableParcel;
 
     @Test
     public void IsParcelExpiredBeforeGivenBeforTime(){

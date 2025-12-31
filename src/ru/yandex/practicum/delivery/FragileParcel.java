@@ -1,7 +1,6 @@
 package ru.yandex.practicum.delivery;
 
 public class FragileParcel extends Parcel implements  Trackable{
-
     private String newLocation;
 
     public String getNewLocation() {

@@ -8,10 +8,10 @@ import ru.yandex.practicum.delivery.*;
 
 public class AddToParcelBoxTest {
 
-    private static ParcelBox<StandardParcel> standardParcelBox;
-    private static StandardParcel parcelOne;
-    private static StandardParcel parcelTwo;
-    private static StandardParcel parcelThree;
+    private  ParcelBox<StandardParcel> standardParcelBox;
+    private  StandardParcel parcelOne;
+    private  StandardParcel parcelTwo;
+    private  StandardParcel parcelThree;
 
     @BeforeEach
     public void beforeEach(){

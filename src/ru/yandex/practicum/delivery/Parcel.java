@@ -1,10 +1,9 @@
 package ru.yandex.practicum.delivery;
 
 public abstract class Parcel {
-    final int standardCoeff = 2;
-    final int perishableCoeff = 3;
-    final int fragileCoeff = 4;
-
+    protected final int standardCoeff = 2;
+    protected final int perishableCoeff = 3;
+    protected final int fragileCoeff = 4;
     protected String desceription;
     protected double weight;
     protected String deliveryAddress;

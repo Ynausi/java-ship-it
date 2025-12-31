@@ -2,6 +2,7 @@ package ru.yandex.practicum.delivery;
 
 public class PerishableParcel extends Parcel{
     private int timeToLive;
+
     public PerishableParcel(String desceription,double weight,String deliveryAddress, int sendDay,int timeToLive){
         super(desceription,weight,deliveryAddress,sendDay);
         this.timeToLive = timeToLive;
