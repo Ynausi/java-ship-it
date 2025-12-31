@@ -18,7 +18,7 @@ public class DeliveryCostTest {
     public static void beforeAll(){
         perishableParcel = new PerishableParcel("Холодец",3,"Монино 1",11,5);
         standardParcel = new StandardParcel("Ковёр",18,"Париж 1",2);
-        fragileParcel = new FragileParcel("Графин",3,"Аллуа 2", 5);
+        fragileParcel = new FragileParcel("Графин",3,"Аллуа 2", 5,"London");
     }
 
 

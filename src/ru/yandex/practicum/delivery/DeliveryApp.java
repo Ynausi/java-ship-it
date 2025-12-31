@@ -72,7 +72,9 @@ public class DeliveryApp {
         String adress = scanner.nextLine();
         int sendDay = Integer.parseInt(scanner.nextLine());
         if(kindOfPackage.equals("Хрупкая")){
-            FragileParcel parcel = new FragileParcel(description,weight,adress,sendDay);
+            System.out.println("Где посылка находится сейчас?");
+            String newLocation = scanner.nextLine();
+            FragileParcel parcel = new FragileParcel(description,weight,adress,sendDay,newLocation);
             allParcels.add(parcel);
             Trackable.trackableParcel.add(parcel);
             fragileParcelBox.addParcel(parcel);
@@ -112,7 +114,7 @@ public class DeliveryApp {
         for(Parcel a: allParcels){
             if(a instanceof FragileParcel){
                 FragileParcel b = (FragileParcel) a;
-                b.reportStatus("London");
+                b.reportStatus(b.getNewLocation());
             }
         }
     }

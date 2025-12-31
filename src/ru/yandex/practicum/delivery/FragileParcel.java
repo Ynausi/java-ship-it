@@ -2,8 +2,15 @@ package ru.yandex.practicum.delivery;
 
 public class FragileParcel extends Parcel implements  Trackable{
 
-    public FragileParcel(String desceription,double weight,String deliveryAddress, int sendDay){
+    private String newLocation;
+
+    public String getNewLocation() {
+        return newLocation;
+    }
+
+    public FragileParcel(String desceription, double weight, String deliveryAddress, int sendDay, String newLocation){
         super(desceription,weight,deliveryAddress,sendDay);
+        this.newLocation = newLocation;
     }
 
     @Override
